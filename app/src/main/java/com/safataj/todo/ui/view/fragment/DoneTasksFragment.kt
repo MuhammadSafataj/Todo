@@ -11,6 +11,7 @@ import com.safataj.todo.data.model.Task
 import com.safataj.todo.databinding.FragmentAllTasksBinding
 import com.safataj.todo.databinding.FragmentDoneTasksBinding
 import com.safataj.todo.ui.view.adapter.TaskAdapter
+import com.safataj.todo.ui.view.bottomSheet.EditTaskBottomSheet
 import com.safataj.todo.ui.viewModel.TaskViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -40,6 +41,7 @@ class DoneTasksFragment : Fragment() {
             }
 
             override fun onEdit(task: Task) {
+                EditTaskBottomSheet(task).show(requireActivity().supportFragmentManager, "EditTask")
             }
 
             override fun onDelete(task: Task) {

@@ -9,6 +9,7 @@ import androidx.fragment.app.viewModels
 import com.safataj.todo.data.model.Task
 import com.safataj.todo.databinding.FragmentUndoneTasksBinding
 import com.safataj.todo.ui.view.adapter.TaskAdapter
+import com.safataj.todo.ui.view.bottomSheet.EditTaskBottomSheet
 import com.safataj.todo.ui.viewModel.TaskViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -37,6 +38,7 @@ class UndoneTasksFragment : Fragment() {
             }
 
             override fun onEdit(task: Task) {
+                EditTaskBottomSheet(task).show(requireActivity().supportFragmentManager, "EditTask")
             }
 
             override fun onDelete(task: Task) {

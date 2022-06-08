@@ -10,4 +10,5 @@
     <string name="description">توضیحات</string>
     <string name="delete">حذف کردن</string>
     <string name="edit">ویرایش کردن</string>
+    <string name="edit_task">ویرایش کار</string>
 </resources>
