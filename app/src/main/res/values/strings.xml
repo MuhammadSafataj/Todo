@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Todo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="icon">icon</string>
+    <string name="task_done_title">کار ها انجام شده اند!</string>
+    <string name="task_done_message">برای افزودن کاری به لیست، بر روی دکمه ی پایین صفحه کلیک کنید.</string>
+    <string name="add_task">افزودن کار</string>
+    <string name="title">عنوان</string>
+    <string name="description">توضیحات</string>
+    <string name="delete">حذف کردن</string>
+    <string name="edit">ویرایش کردن</string>
 </resources>
